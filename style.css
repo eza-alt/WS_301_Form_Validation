@@ -1,0 +1,132 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 25px 12px;
+    font-family: Arial, sans-serif;
+    background: #eef4ff;
+    color: #1f2937;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px #cbd5e1;
+}
+
+h1, h2 {
+    color: #1d4ed8;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input:not([type="checkbox"]),
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #bfdbfe;
+    border-color: #2563eb;
+}
+
+.error-input {
+    border: 2px solid #dc2626 !important;
+    background: #fff7f7;
+}
+
+.error-message {
+    display: block;
+    min-height: 18px;
+    color: #dc2626;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.agreement {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.agreement input {
+    margin-top: 16px;
+}
+
+.agreement label {
+    font-weight: normal;
+}
+
+button {
+    margin-top: 15px;
+    margin-right: 6px;
+    padding: 11px 15px;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+#togglePassword {
+    background: #64748b;
+}
+
+#togglePassword.active {
+    background: #334155;
+}
+
+#resetButton {
+    background: #64748b;
+}
+
+#successMessage {
+    color: #15803d;
+    font-weight: bold;
+}
+
+.note {
+    margin-top: 20px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 16px;
+    }
+}
